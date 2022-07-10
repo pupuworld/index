@@ -41,6 +41,94 @@
             justify-content: center;
             align-items: center;
         }
+
+        .up>a:first-child {
+            margin-left: auto;
+        }
+
+        .up>a:last-child {
+            margin-right: 20px;
+        }
+
+        .up>a {
+            color: white;
+            margin-right: 10px;
+        }
+
+        .up>span {
+            margin-right: 10px;
+            color: white;
+        }
+
+        .down {
+            height: 70px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .down>img {
+            width: 130px;
+            margin-left: 20px;
+        }
+
+        .down>a {
+            margin-left: 80px;
+            font-weight: 900;
+            color: black;
+        }
+
+        .down>form {
+            margin-left: 80px;
+            margin-right: auto;
+            width: 500px;
+        }
+
+        .icons {
+            font-size: 24px;
+        }
+
+        .icons>i {
+            margin-right: 20px;
+        }
+
+        .main>img {
+            width: 100%
+        }
+
+        .items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            padding: 30px;
+        }
+
+        .imgs {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+
+            margin-right: auto;
+            margin-left: 100px;
+        }
+
+        .card {
+            margin-right: 10px;
+        }
+
+        .list-group>span {
+            font-size: 24px;
+            margin-left: 10px;
+        }
+
+        .items>select {
+            width: 120px;
+        }
     </style>
 </head>
 
@@ -66,10 +154,58 @@
             </div>
         </div>
         <div class="main">
-            메인 사진
+            <img src="http://www.patagonia.co.kr/shop/data/skin/patagonia/img/catebanner/002_1.jpg">
         </div>
         <div class="items">
-            상품(목록그룹/카드/드롭다운)들어갈 곳
+            <ul class="list-group list-group-flush">
+                <span>WOMEN'S</span>
+                <li class="list-group-item">신상품</li>
+                <li class="list-group-item">재킷 & 베스트</li>
+                <li class="list-group-item">플리스</li>
+                <li class="list-group-item">스웨트셔츠 & 후디</li>
+                <li class="list-group-item">셔츠</li>
+                <li class="list-group-item">티셔츠</li>
+                <li class="list-group-item">팬츠 & 레깅스</li>
+                <li class="list-group-item">모자 & 액세서리</li>
+            </ul>
+            <div class="imgs">
+                <div class="card" style="width: 18rem;">
+                    <img src="http://www.patagonia.co.kr/shop/data/skin/patagonia/img/goods/N5/75005_BSNG_00.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span>Women Stand Up Overalls</span></br>
+                            <span>₩159,000</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="http://www.patagonia.co.kr/shop/data/skin/patagonia/img/goods/N5/23620_FRTL_00.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span>Women Ridge Flow Shirt</span></br>
+                            <span>₩89,000</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="http://www.patagonia.co.kr/shop/data/skin/patagonia/img/goods/N5/57096_RATN_00.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <span>Women All Seasons Hemp Canvas Shorts</span></br>
+                            <span>₩119,000</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>상품정렬</option>
+                <option value="1">최신순</option>
+                <option value="2">낮은가격순</option>
+                <option value="3">높은가격순</option>
+            </select>
         </div>
 </body>
 
